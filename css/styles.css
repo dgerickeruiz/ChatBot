@@ -339,3 +339,35 @@ h1,h2,h3{
         aspect-ratio: 4 / 5;
     }
 }
+
+.dashboard-cta {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 1rem;
+}
+
+.btn-dashboard {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    border-radius: 8px;
+    background: #f5b700;
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-dashboard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* En celulares el botón ocupa casi todo el ancho */
+@media (max-width: 600px) {
+    .btn-dashboard {
+        width: 100%;
+        max-width: 360px;
+    }
+}
