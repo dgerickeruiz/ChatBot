@@ -342,32 +342,37 @@ h1,h2,h3{
 
 .dashboard-cta {
     display: flex;
-    justify-content: center;
-    padding: 2.5rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3rem 1rem;
+    text-align: center;
 }
 
 .btn-dashboard {
     display: inline-block;
-    padding: 0.9rem 2rem;
-    border-radius: 8px;
+    padding: 1.2rem 3.5rem;
+    border-radius: 10px;
     background: #f5b700;
     color: #1a1a1a;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.4rem;
     text-decoration: none;
     text-align: center;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .btn-dashboard:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 
-/* En celulares el botón ocupa casi todo el ancho */
+/* Celulares: el botón ocupa casi todo el ancho */
 @media (max-width: 600px) {
     .btn-dashboard {
         width: 100%;
-        max-width: 360px;
+        max-width: 380px;
+        padding: 1.1rem 1.5rem;
+        font-size: 1.2rem;
     }
 }
